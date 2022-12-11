@@ -23,7 +23,7 @@
 }
   html {
     /* footer support */
-    position: relative;
+    position: relative; we
     min-height: 100%;
   }
   
@@ -228,7 +228,4 @@
     .modal {
       width: 95%;
     }
-  }
-  @media only screen and (max-width: 767px) { 
-    body { /* The file size of this background image is 93% smaller to improve page load speed on mobile internet connections */
-     background-image: url(images/BACKP.jpg); }}
+  
