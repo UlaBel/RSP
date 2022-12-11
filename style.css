@@ -32,8 +32,8 @@
   }
   
   body {
-    background-image: url(images/BACKGR.png);
-    background-size: cover;
+    
+
     
     color: var(--primary-light);
     font-family: 'Zen Dots', cursive;
