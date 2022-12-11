@@ -1,0 +1,232 @@
+:root {
+    --primary-light: rgb(0, 0, 0);
+    --primary-dark: #78cf82;
+    --secondary-dark: #84bd94;
+    --secondary-dark-hover: #60a0b0;
+    --secondary-dark-active: #1c7293;
+    
+    --primary-yellow: #fac650;
+    background-image: url(images/BACKGR.png);
+    background-size: cover;
+    background-position: center;
+    
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  img{
+    max-width: 120px;  
+    position: relative;
+    align-content: stretch;
+}
+  html {
+    /* footer support */
+    position: relative;
+    min-height: 100%;
+  }
+  
+  body {
+    
+    color: var(--primary-light);
+    font-family: 'Zen Dots', cursive;
+
+    line-height: 1.6;
+    /* footer support */
+    margin-bottom: 100px;
+    
+  }
+  
+  button {
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* HEADER */
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    
+    background-color: var(--header);
+  }
+  
+  .title {
+    color: aliceblue;
+    font-size: 72px;
+    text-shadow: 4px 4px 3px black;
+    font-family: 'Shrikhand', cursive;
+
+   
+  }
+  
+  /* MAIN */
+  
+  .main {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .scoreboard {
+    margin-bottom: 15px;
+  }
+  
+  .score-info {
+    font-size: 32px;
+  }
+  
+  .score-message {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .scores-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 400px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  
+  .score-box {
+    width: 170px;
+  
+  }
+  
+  .score {
+    
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .buttons {
+    
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex: content;
+  }
+  
+  .btn {
+    border-radius: 10px;
+    background-color: var(--secondary-dark);
+  }
+  
+  .btn-square {
+    width: 150px;
+    height: 170px;
+    
+  }
+  
+  
+  .btn:hover {
+    background-color: var(--secondary-dark-hover);
+  }
+  
+  .btn:active {
+    background-color: #2c5d63;
+  }
+  
+  .sign {
+    display: flex;
+    box-sizing: inherit;
+    width: 10px;
+    height: 170px;
+  }
+  .sign img{
+    display: flex;
+    box-sizing: inherit;
+    margin-top: -10;
+  }
+  
+  
+  
+
+  /* MODALS */
+  
+  .modal {
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #2c5d63;
+    text-align: center;
+    font-size: 30px;
+    user-select: none;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+  }
+  
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .modal-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #faf5e4;
+  }
+  
+  .btn-restart {
+    padding: 10px 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #faf5e4;
+  }
+  
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+  }
+  
+  .overlay.active {
+    display: block;
+  }
+  
+  /* MEDIA QUERIES */
+  
+  @media (max-width: 550px) {
+    .title {
+      font-size: 18px;
+    }
+  
+    .score-info {
+      font-size: 26px;
+    }
+  
+    .buttons {
+      gap: 10px;
+    }
+  
+    .btn-square {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .sign {
+      font-size: 50px;
+    }
+  
+    .modal {
+      width: 95%;
+    }
+  }
