@@ -5,10 +5,7 @@
     --secondary-dark-hover: #60a0b0;
     --secondary-dark-active: #1c7293;
     
-    --primary-yellow: #fac650;
-    background-image: url(images/BACKGR.png);
-    background-size: cover;
-    background-position: center;
+    
     
   }
   
@@ -31,6 +28,8 @@
   }
   
   body {
+    background-image: url(images/BACKGR.png);
+    background-size: cover;
     
     color: var(--primary-light);
     font-family: 'Zen Dots', cursive;
@@ -230,3 +229,6 @@
       width: 95%;
     }
   }
+  @media only screen and (max-width: 767px) { 
+    body { /* The file size of this background image is 93% smaller to improve page load speed on mobile internet connections */
+     background-image: url(images/BACKP.jpg); }}
