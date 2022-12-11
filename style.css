@@ -5,6 +5,10 @@
     --secondary-dark-hover: #60a0b0;
     --secondary-dark-active: #1c7293;
     
+
+    background-image: url(images/BACKGR.png);
+
+    background-size: cover;
     
     
   }
